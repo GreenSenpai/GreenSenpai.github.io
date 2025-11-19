@@ -2441,6 +2441,7 @@ section,
   padding-left: 40px;
 }
 
+
 .portfolio-details .portfolio-content blockquote .author img {
   width: 60px;
   height: 60px;
@@ -2906,6 +2907,15 @@ section,
   margin-bottom: 4rem;
   border-radius: 16px;
   overflow: hidden;
+}
+
+.main-video_1 {
+    width: 1000px;
+    height: 400px;
+}
+.main-video_2 {
+    width: 1000px;
+    height: 30px;
 }
 
 .service-details .service-image-showcase .main-image {
