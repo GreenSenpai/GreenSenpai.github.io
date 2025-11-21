@@ -1,0 +1,155 @@
+/* 2 uzduotis */
+h1{
+    font-size: 50px !important;
+    color: blue !important;
+    font-weight: 900 !important;
+    line-height: 1.2 !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+h2 {
+    font-size: 45px !important;
+    color: red !important;
+    font-weight: 800 !important;
+    line-height: 1.3 !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 3px !important;
+}
+
+h3 {
+    font-size: 40px !important;
+    color: green !important;
+    font-weight: 700 !important;
+    line-height: 1.35 !important;
+    letter-spacing: 4px !important;
+    margin-bottom: 4px !important;
+}
+
+h4 {
+    font-size: 35px !important;
+    color: purple !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+h5 {
+    font-size: 30px !important;
+    color: orange !important;
+    font-weight: 500 !important;
+    line-height: 1.45 !important;
+    letter-spacing: 6px !important;
+    margin-bottom: 6px !important;
+}
+
+h6 {
+    font-size: 25px !important;
+    color: cyan !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+    letter-spacing: 7px !important;
+    margin-bottom: 7px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    font-family: 'times new roman', serif;
+}
+/* 3 uzduotis */
+*:hover {
+    color: blue !important;
+    border-color: blue !important;
+}
+*:active {
+  color: green !important;
+}
+/* 4 uzduotis */
+
+
+.section-title{
+    padding: 10px !important;
+    margin: 20px !important;
+}
+
+.about{
+    border: 5px solid green !important;
+    border-radius: 20px !important;
+}
+.resume{
+    border: 5px solid red !important;
+    border-radius: 20px !important;
+}
+.services{
+    border: 5px solid blue !important;
+    border-radius: 20px !important;
+}
+.portfolio{
+    border: 5px solid orange !important;
+    border-radius: 20px !important;
+}
+.contact{
+    border: 5px solid purple !important;
+    border-radius: 20px !important;
+}
+
+/* 5 uzduotis */
+
+.navbar, .navmenu {
+    color: green !important;
+    background-color: red !important;
+}   
+
+.btn-getstarted{
+    color: yellow !important;
+    background-color: blue !important;
+}
+
+/* papildoma uzudotis */
+
+.centras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Header row style */
+.services-table th {
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+}
+
+/* Cell padding */
+.services-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+/* Zebra style */
+.services-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect */
+.services-table tr:hover {
+  background-color: #cce0ff;
+  transition: 0.3s;
+}
