@@ -159,8 +159,6 @@ body {
 
 /* 10 laboras */
 
-/* 10 laboras */
-
 /* 1) Sekcijų fade-in animacija įkrovus puslapį */
 .about.section,
 .resume.section,
@@ -397,6 +395,66 @@ body {
   .about.section::after {
     animation: none;
   }
+}
+
+/* 11 laboras */
+
+/* Kontaktų formos 10 lab stiliai */
+
+.contact-form .form-label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.contact-form .form-control {
+  border-radius: 6px;
+}
+
+.field-error-text {
+  font-size: 0.85rem;
+  color: #dc2626;              /* raudona klaidoms */
+  min-height: 18px;
+  margin-top: 2px;
+}
+
+.field-invalid {
+  border-color: #dc2626 !important;
+  box-shadow: 0 0 0 0.1rem rgba(220, 38, 38, 0.2);
+}
+
+.form-summary {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+/* Submit mygtukas – aiškiai rodom, kad jis neaktyvus */
+#submitBtn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Sėkmingo pateikimo „pop-up“ */
+.success-popup {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: #16a34a;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.success-popup.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 

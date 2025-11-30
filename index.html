@@ -938,35 +938,72 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form">
-              <div class="row gy-4">
+              <form id="contactForm" class="contact-form">
+  <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
+    <div class="col-md-6">
+      <label for="firstName" class="form-label">Vardas</label>
+      <input type="text" id="firstName" name="firstName" class="form-control" required>
+      <div class="field-error-text" data-for="firstName"></div>
+    </div>
 
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
+    <div class="col-md-6">
+      <label for="lastName" class="form-label">Pavardė</label>
+      <input type="text" id="lastName" name="lastName" class="form-control" required>
+      <div class="field-error-text" data-for="lastName"></div>
+    </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">El. paštas</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+      <div class="field-error-text" data-for="email"></div>
+    </div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
+    <div class="col-md-6">
+      <label for="phone" class="form-label">Telefono numeris</label>
+      <input type="tel" id="phone" name="phone" class="form-control" placeholder="+370 6xx xxxxx" required>
+      <div class="field-error-text" data-for="phone"></div>
+    </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+    <div class="col-md-12">
+      <label for="address" class="form-label">Adresas</label>
+      <input type="text" id="address" name="address" class="form-control" required>
+      <div class="field-error-text" data-for="address"></div>
+    </div>
 
-                  <button type="submit">Send Message</button>
-                </div>
+    <div class="col-md-4">
+      <label for="rating1" class="form-label">Dizainas (1–10)</label>
+      <input type="number" id="rating1" name="rating1" class="form-control" min="1" max="10" required>
+      <div class="field-error-text" data-for="rating1"></div>
+    </div>
 
-              </div>
-            </form>
+    <div class="col-md-4">
+      <label for="rating2" class="form-label">Patogumas (1–10)</label>
+      <input type="number" id="rating2" name="rating2" class="form-control" min="1" max="10" required>
+      <div class="field-error-text" data-for="rating2"></div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="rating3" class="form-label">Turinys (1–10)</label>
+      <input type="number" id="rating3" name="rating3" class="form-control" min="1" max="10" required>
+      <div class="field-error-text" data-for="rating3"></div>
+    </div>
+
+    <div class="col-md-12 text-center mt-3">
+      <button type="submit" id="submitBtn" class="btn btn-primary" disabled>Siųsti</button>
+    </div>
+
+    <div class="col-md-12 mt-4">
+      <div id="formSummary" class="form-summary"></div>
+    </div>
+
+    <div class="col-md-12">
+      <div id="successPopup" class="success-popup" aria-live="polite"></div>
+    </div>
+
+  </div>
+</form>
+
           </div>
 
         </div>
@@ -1060,6 +1097,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Custom JS File (11 laboras) -->
+  <script src="assets/js/custom.js"></script>
 
 </body>
 
