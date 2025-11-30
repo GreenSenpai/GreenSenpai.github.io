@@ -457,4 +457,69 @@ body {
   pointer-events: auto;
 }
 
+/* 12 labroras */
+
+/* === MEMORY GAME === */
+
+.game {
+  padding: 40px;
+  text-align: center;
+}
+
+.game-controls {
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: grid;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.game-card {
+  width: 90px;
+  height: 90px;
+  background: #eee;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.game-card.flipped {
+  background: #5cb85c;
+  color: white;
+}
+
+.game-card.matched {
+  background: #4285f4;
+  color: white;
+  cursor: default;
+}
+
+.win-message {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Game stats layout */
+.game-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.game-stats p {
+  margin: 0;
+  font-size: 0.95rem;
+}
 

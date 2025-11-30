@@ -1012,6 +1012,39 @@
 
     </section><!-- /Contact Section -->
 
+    <!-- 12 laboras -->
+     <section id="game" class="game section">
+  <h2 class="section-title">Mano Žaidimas</h2>
+
+  <!-- Sunkumo pasirinkimas -->
+  <div class="game-controls">
+    <label>Sunkumas:</label>
+    <select id="difficulty">
+      <option value="easy">Lengvas (4×3)</option>
+      <option value="hard">Sunkus (6×4)</option>
+    </select>
+
+    <button id="startGame">Start</button>
+    <button id="resetGame">Atnaujinti</button>
+  </div>
+
+  <!-- Statistika -->
+  <div class="game-stats">
+    <p>Ėjimai: <span id="moves">0</span></p>
+    <p>Poros: <span id="pairs">0</span></p>
+    <p>Laikas: <span id="time">0</span> s</p>
+    <p>Geriausias (lengvas): <span id="bestEasy">-</span></p>
+    <p>Geriausias (sunkus): <span id="bestHard">-</span></p>
+  </div>
+
+
+  <!-- Lenta -->
+  <div id="gameBoard" class="game-board"></div>
+
+  <!-- Laimėjimo pranešimas -->
+  <div id="winMessage" class="win-message"></div>
+</section>
+
   </main>
 
   <footer id="footer" class="footer">
